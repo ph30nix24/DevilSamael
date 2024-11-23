@@ -27,8 +27,8 @@ const HomeNavbar = () => {
 
   ]
   const [isHovered, setIsHovered] = useState(false);
-  const logo = 'src\assets\Navbar\light.png'
-  const img = ["src/assets/Navbar/menuBar.svg", "src/assets/Navbar/menuCross.svg"]
+  const logo = './assets/Navbar/light.png'
+  const img = ["./assets/Navbar/menuBar.svg", "./assets/Navbar/menuCross.svg"]
   const [Nav, setNav] = useState(false)
   const current = 0
     return (
