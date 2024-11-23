@@ -3,8 +3,9 @@ import { FaPersonWalkingArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const HomeHero = () => {
-  const heroImage = import.meta.env.BASE_URL + '../assets/Home/Hero/heroImage.png'
+  const heroImage = import.meta.env.BASE_URL + 'src/assets/Home/Hero/heroImage.png'
   const heroIllustration = '../assets/Home/Hero/homeInvite.svg'
+  console.log(import.meta.env.BASE_URL);
   return (
     <div className='w-full h-screen sm:h-screen md:h-[60dvh] lg:h-screen pt-[80px] bg-hero relative -z-10 lg:flex lg:flex-col items-center'>
       <div className='flex w-full h-full lg:h-4/5 flex-col md:flex-row'>
