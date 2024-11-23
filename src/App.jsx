@@ -7,6 +7,7 @@ import Services from './Pages/Services';
 import Blogs from './Pages/Blogs';
 
 function App() {
+  console.log(import.meta.env.BASE_URL);
   return (
     <div>
       <Routes>
