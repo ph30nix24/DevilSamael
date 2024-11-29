@@ -1,8 +1,7 @@
 import React from 'react'
-
+import AboutImg1 from '../../../src/assets/Home/About/HeroAbout.png'
+import AboutImg2 from '../../../src/assets/Home/About/About2.png'
 const HomeAbout = () => {
-    const AboutImg = import.meta.env.BASE_URL + '../../../src/assets/Home/About/HeroAbout.png'
-    const AboutImg2 = import.meta.env.BASE_URL + '../../../src/assets/Home/About/About2.png'
   return (
     <div className='w-full px-3 py-5 bg-HomeAbout sm:px-8 relative -z-10'>
         <div className='w-[200px] h-[200px] hidden lg:block bg-[#fea8af] shadow-heroPink rounded-full absolute top-0 left-0 -z-10'></div>
