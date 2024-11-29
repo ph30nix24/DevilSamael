@@ -6,7 +6,7 @@ import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { TbListSearch } from "react-icons/tb";
 import { GrArticle } from "react-icons/gr";
 import { MdCall } from "react-icons/md";
-
+import Logo from '../../../src/assets/Navbar/light.png';
 
 const HomeNavbar = () => {
   const links = [
@@ -36,7 +36,7 @@ const HomeNavbar = () => {
     <div className='w-full flex flex-col bg-transparent backdrop-blur-md shadow-lg sm:flex-row sm:justify-between sm:items-center sm:px-[2%] fixed z-100'>
       <div className='flex items-center justify-between px-2 py-3 sm:w-fit'>
         <div className='flex items-center gap-2'>
-          <img className='h-[56px] w-[56px] object-contain' src={logo} alt="logo" />
+          <img className='h-[56px] w-[56px] object-contain' src={Logo} alt="logo" />
           <h2 className='font-heading font-normal sm:hidden'>Digital Samael</h2>
         </div>
         <div>
