@@ -13,6 +13,8 @@ import Client6 from "../../../src/assets/Home/Clients/Boys.png";
 import Client7 from "../../../src/assets/Home/Clients/simply.webp";
 import Client8 from "../../../src/assets/Home/Clients/Triplets.png";
 import Client9 from "../../../src/assets/Home/Clients/Sunrise.png";
+import Bottom from '../../../src/assets/Home/Clients/smile.svg';
+import TopHeading from '../../../src/assets/Home/Clients/TopHeading.svg'
 
 const HomeClient = () => {
   const companies = [
@@ -48,8 +50,6 @@ const HomeClient = () => {
       icon : IoCheckmarkDoneCircle
     }
   ];
-  const topHeading = '../src/assets/Home/Clients/TopHeading.svg'
-  const Bottom = '../src/assets/Home/Clients/smile.svg'
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <div className='w-full bg-[#E78A92] relative -z-10 py-5 px-3 lg:px-10'>
@@ -57,7 +57,7 @@ const HomeClient = () => {
         <BiLaugh className='md:hidden'/>
         <div className='flex flex-row items-end '>
           <h1 className='text-[6vw] md:text-[4.5vw] lg:text-[3.5vw] transition-all duration-500 font-heading font-medium text-[#222] px-2 border-b-2 border-[#222]'>Our Clients</h1>
-          <img src={topHeading} className='w-[100px] h-[100px] hidden md:block' alt="" />
+          <img src={TopHeading} className='w-[100px] h-[100px] hidden md:block' alt="" />
         </div>
       </div>
       <div className='text-center font-para py-5 text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.6vw]'>
