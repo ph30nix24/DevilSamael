@@ -11,7 +11,7 @@ const HomeAbout = () => {
         </h1>
         <div className='md:flex md:flex-row md:items-center'>
             <div className='md:w-1/2'>
-                <img src={AboutImg} className='w-full object-contain sm:w-4/5 sm:mx-[10%] ' alt="" />
+                <img src={AboutImg1} className='w-full object-contain sm:w-4/5 sm:mx-[10%] ' alt="" />
             </div>
             <div className='font-para pt-5 text-[3.5vw] sm:text-[2.3vw] text-center font-medium md:w-1/2 md:text-[1.6vw] lg:text-[1.34vw] xl:text-[1.2vw]'>
             if you are not using digital marketing services for your business yet, you might as well be advertising via a carrier pigeon! Jokes aside, partnering with a digital marketing agency today is no longer optional, it's a necessity. If you want to reach a specific demographic, if you want to rank higher in search engine results, if you want to generate those much-needed leads and if you want to be seen and heard on world wide web - working with a digital marketing agency is your only bet!
