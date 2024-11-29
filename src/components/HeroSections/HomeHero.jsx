@@ -1,15 +1,14 @@
 import React from 'react';
 import { FaPersonWalkingArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import HeroImage from '../../../src/assets/Home/Hero/heroImage.png'
+import HeroIllustration from '../../../src/assets/Home/Hero/heroInvite.svg'
 
 const HomeHero = () => {
-  const heroImage = import.meta.env.BASE_URL + 'src/assets/Home/Hero/heroImage.png'
-  const heroIllustration = '../assets/Home/Hero/homeInvite.svg'
-  console.log(import.meta.env.BASE_URL);
   return (
     <div className='w-full h-screen sm:h-screen md:h-[60dvh] lg:h-screen pt-[80px] bg-hero relative -z-10 lg:flex lg:flex-col items-center'>
       <div className='flex w-full h-full lg:h-4/5 flex-col md:flex-row'>
-        <img src={heroImage} className='w-full h-1/2 object-contain md:w-1/2 md:h-full lg:w-2/5 lg:mx-[5%] lg:pt-16' alt="heroImg" />
+        <img src={HeroImage} className='w-full h-1/2 object-contain md:w-1/2 md:h-full lg:w-2/5 lg:mx-[5%] lg:pt-16' alt="heroImg" />
         <div className='w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-start pt-5 sm:pt-0 items-center md:justify-center'>
           <div className='flex flex-col items-center w-full md:justify-center md:items-center'>
             <p className='font-para text-[4vw] sm:text-[3vw] md:text-[2vw]'>
@@ -27,7 +26,7 @@ const HomeHero = () => {
                 <p className='text-base font-para font-medium'>Get in touch</p>
              </Link>
             </button>
-            <img src={heroIllustration} className='w-[200px] h-[200px] object-contain absolute -bottom-10 -left-4 z-0 md:hidden xl:block lg:bottom-0 lg:left-0' alt="" />
+            <img src={HeroIllustration} className='w-[200px] h-[200px] object-contain absolute -bottom-10 -left-4 z-0 md:hidden xl:block lg:bottom-0 lg:left-0' alt="" />
           </div>
         </div>
       </div>

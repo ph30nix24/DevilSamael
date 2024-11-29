@@ -39,7 +39,7 @@ const HomeNavbar = () => {
           <img className='h-[56px] w-[56px] object-contain' src={Logo} alt="logo" />
           <h2 className='font-heading font-normal sm:hidden'>Digital Samael</h2>
         </div>
-        <div>
+        <div className='pr-5'>
           <img onClick={()=>setNav(!Nav)} className='sm:hidden' src={Nav ? MenuCross : MenuBar} alt="" />
         </div>
       </div>
