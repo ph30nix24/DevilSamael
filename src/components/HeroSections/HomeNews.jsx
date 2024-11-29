@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import NewsDelhi from "../../../src/assets/Home/News/Delhi-86.png";
 import NewsSeo from "../../../src/assets/Home/News/SEO-advantages.webp";
 import NewsE from "../../../src/assets/Home/News/e-commerce.jpg";
+import NewsGaming from "../../../src/assets/Home/News/gaming.webp";
 import IllusTop from '../../../src/assets/Home/News/readingTop.svg'
 import IllusBot from '../../../src/assets/Home/News/readingBottom.svg';
 
@@ -34,7 +35,7 @@ const HomeNews = () => {
           type: "Blog",
           title: "Best 5 Gaming Phones of All time You Should Buy",
           content: "Gaming is those part in our life where we release our everything like stress, anxiety, depression, tension, while we play game we don’t think about these because we focus on our game and sometimes once in a rare moment when you play game with your friends you laugh continuously because they making laugh every one of us.",
-          imgSrc: "src/assets/Home/News/gaming.webp",
+          imgSrc: NewsGaming,
           date: "November 5, 2024",
       },
   ]
