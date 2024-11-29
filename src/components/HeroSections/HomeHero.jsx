@@ -2,7 +2,7 @@ import React from 'react';
 import { FaPersonWalkingArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import HeroImage from '../../../src/assets/Home/Hero/heroImage.png'
-import HeroIllustration from '../../../src/assets/Home/Hero/heroInvite.svg'
+import HeroIllustration from '../../../src/assets/Home/Hero/homeInvite.svg'
 
 const HomeHero = () => {
   return (
