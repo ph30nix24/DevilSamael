@@ -43,7 +43,6 @@ const HomeNews = () => {
   const handlePrev = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? blog.length - 1 : prevIndex - 1));
   };
-
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex === blog.length - 1 ? 0 : prevIndex + 1));
   };
