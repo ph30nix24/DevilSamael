@@ -3,44 +3,46 @@ import { GoSearch } from "react-icons/go";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaFileAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
+import SeoImg from '../../../src/assets/Home/ServicesImg/SEO.svg'
+import WebImg from '../../../src/assets/Home/ServicesImg/webDev.svg'
+import ContectImg from '../../../src/assets/Home/ServicesImg/ContentWriting.svg'
+import TopIllus from '../../../src/assets/Home/ServicesImg/ServicesIllus.svg'
 
 const HomeServices = () => {
     const workData = [
         {
-            image : '../../../src/assets/Home/ServicesImg/SEO.svg',
+            image : SeoImg,
             title : 'SEO Optimization',
             description : 'SEO is a vital tool for enhancing your website’s visibility and driving organic traffic. By optimizing your site for search engines, we can significantly improve your search rankings, attract more visitors, and increase conversions. Our comprehensive SEO strategies include thorough keyword research, on-page optimization, ensuring your site stands out in search results. Partnering with us means you’ll benefit from a tailored approach that aligns with your business goals, helping you reach your target audience more effectively. Let’s work together to elevate your online presence, boost your brand’s visibility, and achieve your digital marketing objectives. With our expertise, your website will not only rank higher but also engage and convert more visitors.',
             logo: GoSearch
         },
         {
-            image : '../../../src/assets/Home/ServicesImg/webDev.svg',
+            image : WebImg,
             title : 'Website Development',
             description : 'Website development is the backbone of your online presence. Our team specializes in creating robust, scalable, and visually appealing websites tailored to your business needs. We focus on delivering a seamless user experience, ensuring your site is not only functional but also engaging. By leveraging the latest technologies and best practices, we build websites that perform well across all devices and platforms. Partnering with us means you’ll benefit from a customized approach that aligns with your goals, helping you reach your target audience effectively. Let’s work together to develop a website that not only attracts visitors but also converts them into loyal customers, driving your business growth and success.',
             logo: IoCodeSlash
         },
         {
-            image : '../../../src/assets/Home/ServicesImg/ContentWriting.svg',
+            image : ContectImg,
             title : 'Content Writing',
             description : 'Content writing is crucial for building a strong online presence and engaging your audience. Our team specializes in creating high-quality, relevant content that resonates with your target market. By focusing on thorough research, strategic keyword integration, and compelling storytelling, we ensure your content not only attracts visitors but also converts them into loyal customers. Our approach is tailored to your business goals, helping you stand out in a crowded digital landscape. Partner with us to enhance your brand’s visibility, drive organic traffic, and achieve your marketing objectives. Let’s work together to create content that informs, entertains, and persuades, ultimately boosting your online success.',
             logo: FaFileAlt
         }
     ]
     const [Display, setDisplay] = useState(0)
-    const topIllus = '../../../src/assets/Home/ServicesImg/ServicesIllus.svg'
   return (
     <div className='w-full bg-HomeServicesBg py-5 px-3 relative -z-10'>
         <div className='w-full md:flex md:items-end md:justify-center'>
             <h1 className='underline font-heading text-[5vw] text-center font-semibold md:font-medium md:text-[3vw] md:no-underline w-fit md:border-b-2 border-[#222] mb-5 '>What We do
             </h1>
             <div className='hidden md:block'>
-                <img src={import.meta.env.BASE_URL + topIllus} className='w-[100px] h-[100px]' alt="" />
+                <img src={TopIllus} className='w-[100px] h-[100px]' alt="" />
             </div>
 
         </div>
         <div className='bg-[#fea8af] w-full rounded-md flex flex-col md:flex-row py-10 px-5 lg:w-4/5 lg:mx-[10%]'>
             <div className='w-full md:w-1/2 flex justify-end'>
-                <img src={import.meta.env.BASE_URL+workData[Display].image} className='w-3/5 mx-[20%] md:w-4/5 md:mx-[10%]' alt="" />
+                <img src={workData[Display].image} className='w-3/5 mx-[20%] md:w-4/5 md:mx-[10%]' alt="" />
             </div>
             <div className='w-full md:w-1/2 lg:px-[2.5%] flex flex-col pt-5 md:flex md:flex-row'>
                 <div className='flex w-full md:w-[15%] order-1 md:order-2 md:flex-col'>
