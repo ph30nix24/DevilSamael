@@ -5,10 +5,10 @@ import { BsInstagram } from "react-icons/bs";
 import { FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail, IoIosMailUnread , IoIosCall } from 'react-icons/io';
 import { FaYoutube } from "react-icons/fa6";
+import PhoneIllus from '../../../src/assets/Home/Footer/FooterIllus.svg'
 
 const HomeFooter = () => {
     const [activeIndex, setactiveIndex] = useState(null)
-    const PhoneIllus = 'src/assets/Home/Footer/FooterIllus.svg'
     const social = [MdOutlineFacebook, BsInstagram, FaWhatsapp, FaLinkedinIn, FaYoutube]
   return (
     <div className='w-full h-fit bg-[#E78A92] px-3 py-5 flex flex-col'>

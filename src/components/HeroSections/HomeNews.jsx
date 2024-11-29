@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { FaNewspaper } from "react-icons/fa6";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import NewsDelhi from "../../../src/assets/Home/News/Delhi-86.png";
+import NewsSeo from "../../../src/assets/Home/News/SEO-advantages.webp";
+import NewsE from "../../../src/assets/Home/News/e-commerce.jpg";
+import IllusTop from '../../../src/assets/Home/News/readingTop.svg'
+import IllusBot from '../../../src/assets/Home/News/readingBottom.svg';
 
 const HomeNews = () => {
   const blog = [
@@ -9,20 +14,20 @@ const HomeNews = () => {
           type: "Bussiness",
           title : "Best Digital Marketing Agency in Delhi-86",
           content : "According to Neil Patel, A agency is a company that specialize in providing a various types of services for online business growth and their presence. Digital marketing agency is a firm or company where we provide services to our customer's.",
-          imgSrc : "src/assets/Home/News/Delhi-86.png",
+          imgSrc : NewsDelhi,
           date : "September 25, 2024",
       },
       {   type: "Blog",
           title: "Best SEO Information and Advantages in 2025",
           content: "The best SEO information and advantages in 2025. SEO it is known as “Search Engine Optimization”. It means you improving the quantity and quality of traffic to your website through organic search result is called search engine optimization.",
-          imgSrc: "src/assets/Home/News/SEO-advantages.webp",
+          imgSrc: NewsSeo,
           date: "October 2, 2024",
       },
       {
           type: "Blog",
           title: "E-commerce",
           content: "E-commerce business we know about a strategies for e-commerce business. E-commerce is known as Electronic Commerce in this business you buying and selling of goods and service online.  It can involve exchange the products or services between consumers and business both.",
-          imgSrc: "src/assets/Home/News/e-commerce.jpg",
+          imgSrc: NewsE,
           date: "August 19, 2024",
       },
       {
@@ -33,8 +38,6 @@ const HomeNews = () => {
           date: "November 5, 2024",
       },
   ]
-  const illusTop = 'src/assets/Home/News/readingTop.svg'
-  const illusBot = 'src/assets/Home/News/readingBottom.svg'
   const [activeIndex, setActiveIndex] = useState(0);
   const handlePrev = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? blog.length - 1 : prevIndex - 1));
@@ -53,7 +56,7 @@ const HomeNews = () => {
           Latest News and Updates
         </h1>
         <div className='hidden lg:block'>
-          <img src={illusTop} className='w-[100px]' alt="" />
+          <img src={IllusTop} className='w-[100px]' alt="" />
         </div>
       </div>
       <div className='text-center py-5 font-para text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw]'>
@@ -100,7 +103,7 @@ const HomeNews = () => {
           <BsArrowRightShort/>
         </div>
         <div className='hidden lg:block absolute w-[300px] bottom-0 right-0'>
-          <img src={illusBot} alt="" />
+          <img src={IllusBot} alt="" />
         </div>
       </div>
     </div>
