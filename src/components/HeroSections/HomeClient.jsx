@@ -4,19 +4,27 @@ import { FaRegFaceSmileBeam } from "react-icons/fa6";
 import { GiSandsOfTime } from "react-icons/gi";
 import { FaRegLightbulb } from "react-icons/fa";
 import { IoHappyOutline, IoCheckmarkDoneCircle } from "react-icons/io5";
-
+import Client1 from "../../../src/assets/Home/Clients/spice-buscket.webp";
+import Client2 from "../../../src/assets/Home/Clients/Header-1536x597-1.webp";
+import Client3 from "../../../src/assets/Home/Clients/omega.webp";
+import Client4 from "../../../src/assets/Home/Clients/Kojo-06_180x.webp";
+import Client5 from "../../../src/assets/Home/Clients/derma.webp";
+import Client6 from "../../../src/assets/Home/Clients/Boys.png";
+import Client7 from "../../../src/assets/Home/Clients/simply.webp";
+import Client8 from "../../../src/assets/Home/Clients/Triplets.png";
+import Client9 from "../../../src/assets/Home/Clients/Sunrise.png";
 
 const HomeClient = () => {
   const companies = [
-    { company: "Spicy Bucket", logo: "src/assets/Home/Clients/spice-buscket.webp" },
-    { company: "Peter'Sit", logo: "src/assets/Home/Clients/Header-1536x597-1.webp" },
-    { company: "Omega", logo: "src/assets/Home/Clients/omega.webp" },
-    { company: "Kojo", logo: "src/assets/Home/Clients/Kojo-06_180x.webp" },
-    { company: "Derma", logo: "src/assets/Home/Clients/derma.webp" },
-    { company: "Bad Boys", logo: "src/assets/Home/Clients/Boys.png" },
-    { company: "SBS", logo: "src/assets/Home/Clients/simply.webp" },
-    { company: "The TRiPlets", logo: "src/assets/Home/Clients/Triplets.png" },
-    { company: "Sunrise", logo: "src/assets/Home/Clients/Sunrise.png" },
+    { company: "Spicy Bucket", logo: Client1},
+    { company: "Peter'Sit", logo: Client2 },
+    { company: "Omega", logo: Client3 },
+    { company: "Kojo", logo: Client4 },
+    { company: "Derma", logo: Client5 },
+    { company: "Bad Boys", logo: Client6 },
+    { company: "SBS", logo: Client7 },
+    { company: "The TRiPlets", logo: Client8 },
+    { company: "Sunrise", logo: Client9},
   ];
   const Experience = [
     {

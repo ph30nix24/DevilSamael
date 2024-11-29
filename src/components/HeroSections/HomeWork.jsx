@@ -1,29 +1,32 @@
 import React, { useState } from 'react'
 import { AiOutlineLinux } from "react-icons/ai";
 import { BsChevronBarDown, BsChevronBarUp } from "react-icons/bs";
-
+import WorkImg1 from '../../../src/assets/Home/Work/Understanding.svg';
+import WorkImg2 from '../../../src/assets/Home/Work/planning.svg';
+import WorkImg3 from '../../../src/assets/Home/Work/web.svg';
+import WorkImg4 from '../../../src/assets/Home/Work/social.svg';
 const HomeWork = () => {
   const data = [
     {
-      img: 'src/assets/Home/Work/Understanding.svg',
+      img: WorkImg1,
       title: 'Understanding the Client',
       Count: '01',
       Description: 'Discuss goals and target audience with the client and Set clear objectives for both digital marketing and website development.',
     },
     {
-      img: 'src/assets/Home/Work/planning.svg',
+      img: WorkImg2,
       title: 'Conduct Research and Planning',
       Count: '02',
       Description: 'Analyze competitors and market trends and Create a strategy that includes both marketing and web development plans.',
     },
     {
-      img: 'src/assets/Home/Work/web.svg',
+      img: WorkImg3,
       title: 'Develop and Design the Website',
       Count: '03',
       Description: 'Design a user-friendly, responsive website using tools like React and Tailwind CSS. Optimize for SEO to ensure the site ranks well on search engines.',
     },
     {
-      img: 'src/assets/Home/Work/social.svg',
+      img: WorkImg4,
       title: 'Launch Marketing Campaigns',
       Count: '04',
       Description: 'Implement digital marketing strategies across chosen channels (SEO, social media, email, etc.). Create and publish content that drives traffic and engagement.',
