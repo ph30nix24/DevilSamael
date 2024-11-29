@@ -7,6 +7,8 @@ import { TbListSearch } from "react-icons/tb";
 import { GrArticle } from "react-icons/gr";
 import { MdCall } from "react-icons/md";
 import Logo from '../../../src/assets/Navbar/light.png';
+import MenuBar from '../../../src/assets/Navbar/menuBar.svg';
+import MenuCross from '../../../src/assets/Navbar/menuCross.svg';
 
 const HomeNavbar = () => {
   const links = [
@@ -28,8 +30,6 @@ const HomeNavbar = () => {
 
   ]
   const [isHovered, setIsHovered] = useState(false);
-  const logo = '../../../src/assets/Navbar/light.png'
-  const img = ["./src/assets/Navbar/menuBar.svg", "src/assets/Navbar/menuCross.svg"]
   const [Nav, setNav] = useState(false)
   const current = 0
     return (
@@ -40,7 +40,7 @@ const HomeNavbar = () => {
           <h2 className='font-heading font-normal sm:hidden'>Digital Samael</h2>
         </div>
         <div>
-          <img onClick={()=>setNav(!Nav)} className='sm:hidden' src={Nav ? img[1] : img[0]} alt="" />
+          <img onClick={()=>setNav(!Nav)} className='sm:hidden' src={Nav ? MenuCross : MenuBar} alt="" />
         </div>
       </div>
       <nav className={`w-full sm:w-fit self-center`}>
