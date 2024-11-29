@@ -1,8 +1,8 @@
 import React from 'react'
 
 const HomeAbout = () => {
-    const AboutImg = 'src/assets/Home/About/HeroAbout.png'
-    const AboutImg2 = 'src/assets/Home/About/About2.png'
+    const AboutImg = '../../../src/assets/Home/About/HeroAbout.png'
+    const AboutImg2 = '../../../src/assets/Home/About/About2.png'
   return (
     <div className='w-full px-3 py-5 bg-HomeAbout sm:px-8 relative -z-10'>
         <div className='w-[200px] h-[200px] hidden lg:block bg-[#fea8af] shadow-heroPink rounded-full absolute top-0 left-0 -z-10'></div>
